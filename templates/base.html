@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <div class="main-wrapper">
+        <div class="header-wrapper">
+            <a class="title" href="/">pittsburgh scitech science olympiad</a>
+            <div class="navlink-wrapper">
+                <a href="/join" class="navlink">join!</a>
+                <a href="/about" class="navlink">about</a>
+                <a href="/faqs" class="navlink">FAQs</a>
+                <a href="/leadership" class="navlink">leadership</a>
+                <a href="/support" class="navlink">support</a>
+            </div>
+        </div>
+        <div class="content-wrapper">
+            {% block content %}{% endblock %}
+        </div>
+        
+        <div class="footer-wrapper">
+            <div class="row-footer-wrapper">
+                
+            </div>
+            <div class="credit-wrapper">
+                <span class="credit">All website code (open sourced <a href="https://github.com/ilisien/pstso-website" class="credit-link">here</a>), resources, and writing are licensed under the <a href="/" class="credit-link">MIT License</a>.</span>
+                <span class="credit">Images on this site are licensed under <a href="https://creativecommons.org/licenses/by-nd/4.0/deed.en" class="credit-link">CC BY-ND 4.0</a>.</span>
+                <span class="credit">Font licenses can be found <a href="/font-licenses" class="credit-link">here</a>.</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
