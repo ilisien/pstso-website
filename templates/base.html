@@ -3,7 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/static/css/style.css">
-    <title>{% block title %}{% endblock %}</title>
+    <title>{% block title %}PSTSO{% endblock %}</title>
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="main-wrapper">
@@ -18,7 +28,9 @@
             </div>
         </div>
         <div class="content-wrapper">
-            {% block content %}{% endblock %}
+            {% block content %}
+            <p class="wip">this website is wip! check back in a few days or <a class="wip-link" href="https://github.com/ilisien/pstso-website">help to develop it</a>!</p>
+            {% endblock %}
         </div>
         
         <div class="footer-wrapper">
@@ -26,7 +38,7 @@
                 
             </div>
             <div class="credit-wrapper">
-                <span class="credit">All website code (open sourced <a href="https://github.com/ilisien/pstso-website" class="credit-link">here</a>), resources, and writing are licensed under the <a href="/" class="credit-link">MIT License</a>.</span>
+                <span class="credit">All website code (open sourced <a href="https://github.com/ilisien/pstso-website" class="credit-link">here</a>), resources, and writing are licensed under the <a href="https://opensource.org/license/mit" class="credit-link">MIT License</a>.</span>
                 <span class="credit">Images on this site are licensed under <a href="https://creativecommons.org/licenses/by-nd/4.0/deed.en" class="credit-link">CC BY-ND 4.0</a>.</span>
                 <span class="credit">Font licenses can be found <a href="/font-licenses" class="credit-link">here</a>.</span>
             </div>
