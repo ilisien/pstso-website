@@ -1,1 +1,4 @@
 /desktop.ini
+env/
+wsgi.py
+
