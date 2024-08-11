@@ -3,3 +3,4 @@ env/
 wsgi.py
 desktop.ini
 unmessupgoogledrivethings.py
+__pycache__/
